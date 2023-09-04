@@ -1,7 +1,8 @@
 @import '../../../sass/variables';
 .button {
     color: #fff;
-    background-image: $primary-color    ;
+    background: $secondary-color;
+
     width: 100%;
     height: 56px;
     flex-shrink: 0;
@@ -15,7 +16,7 @@
     font-weight: 700;
     line-height: normal;
     &:hover{
-        background: $secondary-color;
+        background-image: $primary-color    ;
 
     }
 }

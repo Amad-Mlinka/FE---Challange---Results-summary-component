@@ -1,0 +1,84 @@
+@import '../../../../sass/variables';
+.summaryItem{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    padding: 15px;
+    border-radius: 12px;
+
+    &.reaction{
+        background: $reaction-gradient;
+        .left{
+            color: $reaction;
+        }
+        
+    }
+
+    &.memory{
+        background: $memory-gradient;
+        .left{
+            color: $memory;
+        }
+        
+
+    }
+
+    &.verbal{
+        background: $verbal-gradient;
+        .left{
+            color: $verbal;
+        }
+
+    }
+
+    &.visual{
+        background: $visual-gradient;
+        .left{
+            color: $visual;
+        }
+    }
+
+    .left{
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: $main-font;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .right  {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        .value{
+            color:$secondary-color;
+            text-align: right;
+            font-feature-settings: 'clig' off, 'liga' off;
+            font-family: Hanken Grotesk;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+        .ofX{
+            display: flex;
+            gap: 5px;
+            color:$secondary-color;
+            opacity: 0.5;
+            text-align: right;
+            font-feature-settings: 'clig' off, 'liga' off;
+            font-family: Hanken Grotesk;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+    }
+}

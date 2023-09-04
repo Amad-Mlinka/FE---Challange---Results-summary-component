@@ -10,19 +10,22 @@ import classes from './SummaryResults.module.scss'
 const SummaryResults = (props) => {
     console.log(props.values)
     const summaryItems = props.values.map((item,index) => ( 
-        <SummaryItem key ={index} categore = {item.category} value ={item.value} icon = {item.icon}/>
+        <SummaryItem key ={index} category = {item.category} value ={item.score} icon = {item.icon} maxValue={100}/>
 
     ))
     return(
     <div className={classes.summaryResults}>
-        <div className={classes.summaryTitle}>
-            Summary
+        <div className={classes.summaryResultsContainer}>  
+            <div className={classes.summaryTitle}>
+                Summary
+            </div>
+            <div className={classes.summaryItems}>
+                {summaryItems}
+            </div>
+            <div className={classes.buttonContainer}>
+                <Button text = {"Continue"}/>
+            </div>
         </div>
-        <div className="summaryItems">
-            {summaryItems}
-        </div>
-        <Button text = {"Continue"}/>
-
     </div>
         
     )
