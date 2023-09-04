@@ -29,7 +29,7 @@
     .summaryTitle{
         color: $secondary-color;
         font-feature-settings: 'clig' off, 'liga' off;
-        font-family: Hanken Grotesk;
+        font-family: $main-font;
         font-size: 18px;
         font-style: normal;
         font-weight: 700;

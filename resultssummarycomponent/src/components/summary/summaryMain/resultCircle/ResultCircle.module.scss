@@ -17,13 +17,13 @@
         color: white;
         text-align: center;
         font-feature-settings: 'clig' off, 'liga' off;
-        font-family: Hanken Grotesk;
+        font-family: $main-font;
         font-size: 56px;
         font-style: normal;
         font-weight: 800;
         line-height: 72px; /* 128.571% */
         @include tablet{
-            font-family: Hanken Grotesk;
+            font-family: $main-font;
             font-size: 72px;
             font-style: normal;
             font-weight: 800;
@@ -33,7 +33,7 @@
     .ofX{
         color: $light-blue;
         font-feature-settings: 'clig' off, 'liga' off;
-        font-family: Hanken Grotesk;
+        font-family: $main-font;
         font-size: 16px;
         font-style: normal;
         font-weight: 700;
@@ -41,8 +41,7 @@
         text-align: center;
         @include tablet{
             font-feature-settings: 'clig' off, 'liga' off;
-            /* Body (Bold) */
-            font-family: Hanken Grotesk;
+            font-family: $main-font;
             font-size: 18px;
             font-style: normal;
             font-weight: 700;

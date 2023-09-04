@@ -61,7 +61,7 @@
             color:$secondary-color;
             text-align: right;
             font-feature-settings: 'clig' off, 'liga' off;
-            font-family: Hanken Grotesk;
+            font-family: $main-font;
             font-size: 16px;
             font-style: normal;
             font-weight: 700;
@@ -74,7 +74,7 @@
             opacity: 0.5;
             text-align: right;
             font-feature-settings: 'clig' off, 'liga' off;
-            font-family: Hanken Grotesk;
+            font-family: $main-font;
             font-size: 16px;
             font-style: normal;
             font-weight: 700;
