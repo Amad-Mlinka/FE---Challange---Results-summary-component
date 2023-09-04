@@ -1,0 +1,23 @@
+@import '../../../sass/_variables';
+.summaryResults{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    background: white;
+    padding: 0px 10px;
+    padding-top: 83px;
+    position: relative;
+    top: -50px;
+    z-index: -1;
+
+    .summaryTitle{
+        color: $secondary-color;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Hanken Grotesk;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+}

@@ -1,0 +1,59 @@
+@import '../../../sass/variables';
+@import '../../../sass/breakpoints';
+.summaryMain{
+    height: 375px;
+    width: 100%;
+    background: $primary-color;
+    border-radius: 0px 0px 32px 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    @include tablet{
+        height: 512px;
+        width: 368px;
+        border-radius: 32px;
+        padding: 38px;
+
+    }    
+}
+
+.resultHeading{
+    color: $light-blue;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Hanken Grotesk;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.resultText{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-width: 250px;
+    
+    .resultWord{
+        color: #fff;
+        text-align: center;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Hanken Grotesk;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    .resultExplanation{
+        color: $light-blue;
+        text-align: center;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Hanken Grotesk;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        padding: 0px 57px 20px 57px;
+    }
+}
+

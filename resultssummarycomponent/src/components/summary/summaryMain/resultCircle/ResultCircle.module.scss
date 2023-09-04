@@ -1,0 +1,51 @@
+@import '../../../../sass/variables';
+@import '../../../../sass/breakpoints';
+.circle{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background-image: $primary-color-reversed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @include tablet{
+        width: 200px;
+        height: 200px;
+    }
+
+    .mainValue{
+        color: white;
+        text-align: center;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Hanken Grotesk;
+        font-size: 56px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 72px; /* 128.571% */
+        @include tablet{
+            font-family: Hanken Grotesk;
+            font-size: 72px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: 72px; /* 100% */
+        }
+    }
+    .ofX{
+        color: $light-blue;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Hanken Grotesk;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        @include tablet{
+            font-feature-settings: 'clig' off, 'liga' off;
+            /* Body (Bold) */
+            font-family: Hanken Grotesk;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+    }
+}
